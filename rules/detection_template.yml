@@ -13,8 +13,7 @@ Description: A service account or similar identity has dumped all secrets on the
 Runbook: https://github.com/CMS-Enterprise/batcave-detections-as-code/tree/main/runbooks/<NAME>.md
 SummaryAttributes:
   - p_any_ip_addresses
-DedupPeriodMinutes: #Optional, only if dedup() function is used in detection.py
-Threshold: #Optional, used with DedupPeriodMinutes
+
 Tags:
   - batCAVE
   - purple-team
