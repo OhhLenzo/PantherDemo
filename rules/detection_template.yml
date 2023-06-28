@@ -1,0 +1,31 @@
+# This is a Sample Template. Delete any comments, including these lines.
+# https://docs.panther.com/detections/writing-and-editing-detections/rules#reference
+AnalysisType: rule
+Enabled: true
+Filename: #name of file in same folder
+RuleID: #<datasource>.<rule-name>
+LogTypes:
+  #Similar to Datasource in RuleID
+  - Amazon.EKS.Audit
+Severity: Medium
+DisplayName: #Human readable long name
+Description: A service account or similar identity has dumped all secrets on the cluster, across all namespaces.
+Runbook: https://github.com/<repo>/tree/main/runbooks/<NAME>.md
+SummaryAttributes:
+  - p_any_ip_addresses
+DedupPeriodMinutes: #Optional, only if dedup() function is used in detection.py
+Threshold: #Optional, used with DedupPeriodMinutes
+Tags:
+  - batCAVE
+  - purple-team
+Tests:
+  - 
+    Name: #Human Readable Test Name
+    LogType: Amazon.EKS.Audit
+    ExpectedResult: true
+    Log:
+      {
+
+      }
+  -
+    Name:

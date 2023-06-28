@@ -1,0 +1,75 @@
+{
+    "annotations": {
+        "authorization.k8s.io/decision": "allow",
+        "authorization.k8s.io/reason": ""
+    },
+    "apiVersion": "audit.k8s.io/v1",
+    "auditID": "18fde4d0-7b8a-411f-8d7d-65b755242127",
+    "kind": "Event",
+    "level": "Metadata",
+    "objectRef": {
+        "apiVersion": "v1",
+        "name": "clusterrole-aggregation-controller",
+        "namespace": "kube-system",
+        "resource": "serviceaccounts",
+        "subresource": "token"
+    },
+    "p_any_actor_ids": [
+        "aws-iam-authenticator:1101102203300:AROAVN3JMTATFQGY3LFCX"
+    ],
+    "p_any_aws_account_ids": [
+        "1101102203300"
+    ],
+    "p_any_aws_arns": [
+        "arn:aws:iam::1101102203300:role/ct-application-admin",
+        "arn:aws:sts::1101102203300:assumed-role/ct-application-admin/SX11"
+    ],
+    "p_any_ip_addresses": [
+        "10.232.33.180"
+    ],
+    "p_any_usernames": [
+        "kubernetes-admin"
+    ],
+    "p_event_time": "2023-06-06 23:19:36.769",
+    "p_log_type": "Amazon.EKS.Audit",
+    "p_parse_time": "2023-06-06 23:22:27.263",
+    "p_row_id": "d67598826d65f0d48abfc7ce1895e09f03",
+    "p_schema_version": 0,
+    "p_source_id": "5596b0b1-6b3c-4457-9eae-d0a5cbc1cc7c",
+    "p_source_label": "cloudwatchlogs-dev",
+    "p_timeline": "2023-06-06 23:19:36.769",
+    "requestReceivedTimestamp": "2023-06-06 23:19:36.769",
+    "requestURI": "/api/v1/namespaces/kube-system/serviceaccounts/clusterrole-aggregation-controller/token",
+    "responseStatus": {
+        "code": 201
+    },
+    "sourceIPs": [
+        "10.232.33.180"
+    ],
+    "stage": "ResponseComplete",
+    "stageTimestamp": "2023-06-06 23:19:36.778",
+    "user": {
+        "extra": {
+        "accessKeyId": [
+            "ASIAVN3JMTATBRDRI345"
+        ],
+        "arn": [
+            "arn:aws:sts::1101102203300:assumed-role/ct-application-admin/SX11"
+        ],
+        "canonicalArn": [
+            "arn:aws:iam::1101102203300:role/ct-application-admin"
+        ],
+        "sessionName": [
+            "SX11"
+        ]
+        },
+        "groups": [
+        "system:masters",
+        "system:authenticated"
+        ],
+        "uid": "aws-iam-authenticator:1101102203300:AROAVN3JMTATFQGY3LFCX",
+        "username": "kubernetes-admin"
+    },
+    "userAgent": "stratus-red-team_9971dcdd-e603-4a6c-81a4-af7f700fab47",
+    "verb": "create"
+}

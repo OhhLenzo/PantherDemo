@@ -1,0 +1,52 @@
+{
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    },
+    "apiVersion": "audit.k8s.io/v1",
+    "auditID": "393e8547-fdb0-41e5-87f4-9704679c8fbd",
+    "kind": "Event",
+    "level": "Request",
+    "objectRef": {
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1",
+      "name": "system:controller:clusterrole-aggregation-controller",
+      "resource": "clusterrolebindings"
+    },
+    "p_any_actor_ids": [
+      "ccb20b6d-5b4f-442e-b040-2c4b2c629db4"
+    ],
+    "p_any_ip_addresses": [
+      "::1"
+    ],
+    "p_any_usernames": [
+      "system:apiserver"
+    ],
+    "p_event_time": "2023-06-06 22:09:31.388",
+    "p_log_type": "Amazon.EKS.Audit",
+    "p_parse_time": "2023-06-06 22:17:24.08",
+    "p_row_id": "56620a58eef4f5bdd8b2b3ce18fbb3cc04",
+    "p_schema_version": 0,
+    "p_source_id": "5596b0b1-6b3c-4457-9eae-d0a5cbc1cc7c",
+    "p_source_label": "cloudwatchlogs-dev",
+    "p_timeline": "2023-06-06 22:09:31.388",
+    "requestReceivedTimestamp": "2023-06-06 22:09:31.388",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/clusterrolebindings/system:controller:clusterrole-aggregation-controller",
+    "responseStatus": {
+      "code": 200
+    },
+    "sourceIPs": [
+      "::1"
+    ],
+    "stage": "ResponseComplete",
+    "stageTimestamp": "2023-06-06 22:09:31.393",
+    "user": {
+      "groups": [
+        "system:masters"
+      ],
+      "uid": "ccb20b6d-5b4f-442e-b040-2c4b2c629db4",
+      "username": "system:apiserver"
+    },
+    "userAgent": "kube-apiserver/v1.23.17 (linux/amd64) kubernetes/cd5c12c",
+    "verb": "get"
+}
